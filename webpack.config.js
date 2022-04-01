@@ -1,7 +1,7 @@
 const path = require("path");
 // Importing path from the Node library
 
-const postCSSPlugins = [require("postcss-simple-vars"), require("postcss-nested"), require("autoprefixer")];
+const postCSSPlugins = [require("postcss-import"), require("postcss-simple-vars"), require("postcss-nested"), require("autoprefixer")];
 
 module.exports = {
   entry: "./app/assets/scripts/App.js",
@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        // Style loader must go first otherwise webpack throws an erro
+        // Style loader must go first otherwise webpack throws an error
         use: ["style-loader", "css-loader?url=false", { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
       }
     ]
