@@ -17,7 +17,7 @@ module.exports = {
       {
         test: /\.css$/i,
         // Style loader must go first otherwise webpack throws an erro
-        use: ["style-loader", "css-loader", { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
+        use: ["style-loader", "css-loader?url=false", { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
       }
     ]
   }
