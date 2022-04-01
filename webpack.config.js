@@ -8,5 +8,6 @@ module.exports = {
     // Generate absolute path to the correct folder
     path: path.resolve(__dirname, "app")
   },
-  mode: "development"
+  mode: "development",
+  watch: true
 };
