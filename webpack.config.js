@@ -14,7 +14,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["css-loader"]
+        // Style loader must go first otherwise webpack throws an erro
+        use: ["style-loader", "css-loader"]
       }
     ]
   }
