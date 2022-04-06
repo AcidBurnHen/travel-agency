@@ -1,8 +1,8 @@
 @import "normalize.css";
 
-@import "base/_global.css";
-
 @import "base/_variables.css";
+
+@import "base/_global.css";
 
 @import "base/_mixins.css";
 
@@ -17,3 +17,5 @@
 @import "modules/_headline.css";
 
 @import "modules/_row.css";
+
+@import "modules/_generic-content-container.css";
