@@ -1,5 +1,6 @@
 .row {
-  @mixin clearFloat;
+  @mixin clearFloat {
+  }
 
   &--gutters {
     margin-right: -65px;
