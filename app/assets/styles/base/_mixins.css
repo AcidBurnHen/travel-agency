@@ -15,3 +15,11 @@
     @mixin-content;
   }
 }
+
+@define-mixin clearFloat {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
