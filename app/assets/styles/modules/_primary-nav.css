@@ -5,20 +5,9 @@
     padding-top: 0;
   }
 
-  &--pull-right {
-    @mixin atMedium {
-      float: right;
-    }
-  }
-
   ul {
     margin: 0;
     padding: 0;
-    &::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
   }
 
   li {
@@ -29,8 +18,6 @@
 
     @mixin atMedium {
       padding-right: 20px;
-      float: left;
-      display: block;
     }
   }
 
