@@ -36,12 +36,38 @@
 
   &__menu-icon {
     width: 20px;
-    height: 20px;
-    background-color: white;
+    height: 19px;
     position: absolute;
     z-index: 2;
     top: 10px;
     right: 10px;
+
+    &__top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+    }
 
     @mixin atMedium {
       display: none;
