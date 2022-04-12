@@ -16,4 +16,10 @@
       font-size: 1.25rem;
     }
   }
+
+  @mixin atMedium {
+    &--header-t-margin {
+      margin-top: 0.4375rem;
+    }
+  }
 }
