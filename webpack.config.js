@@ -13,7 +13,7 @@ const postCSSPlugins = [require("postcss-mixins"), require("postcss-import"), re
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy Images", () => {
-      fse.copySync("./app/assets/images", "./dist/assets/images");
+      fse.copySync("./app/assets/images", "./docs/assets/images");
     });
   }
 }
@@ -80,7 +80,7 @@ if (currentTask == "build") {
     filename: "[name].[chunkhash].js",
     chunkFilename: "[name].[chunkhash].js",
     // Generate absolute path to the correct folder
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "docs")
   };
   config.mode = "production";
   config.optimization = {
